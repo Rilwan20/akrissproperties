@@ -11,3 +11,25 @@ body,
 div {
   font-family: 'Poppins', sans-serif;
 }
+
+.none {
+  display: none;
+}
+.color {
+  background-color: #fff !important;
+  color: #000 !important;
+  transition: 0.2s all ease;
+}
+
+.color p {
+  color: #000 !important;
+}
+
+.open {
+  display: block;
+}
+.openWork {
+  display: block !important;
+  background-color: #fff !important;
+  color: #000 !important;
+}
