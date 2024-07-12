@@ -11,11 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <script defer src="src/contact.js"></script>
   </head>
   <body>
-    <header class="flex justify-between py-8 px-[6%]">
+    <header class="flex justify-between py-8 px-[6%]" id="navLinks">
       <img src="" alt="Logo" />
-      <nav class="hidden lg:block">
+      <nav class="hidden lg:block" id="navs">
         <ul class="flex justify-between items-center gap-6">
           <li class="font-normal"><a href="index.html" class="text-xs">WHAT WE DO </a></li>
           <li class="font-normal">
@@ -28,19 +29,24 @@
               >MEET THE TEAM</a
             >
           </li>
-          <li class="bg-orange-600 px-8 py-3 text-white font-normal">
+          <li class="bg-orange-600 lg:px-8 lg:w-fit w-[60%] lg:m-0 mx-auto px-3 py-3 text-white font-normal">
             
             <a href="contact.html" class="text-xs" target="_blank"
               <button class="text-xs font-normal">CONTACT US</button>
             </a>
     
-          <li class="bg-orange-400 px-8 py-3 text-white font-semibold">
+          <li class="bg-orange-400 lg:px-8 lg:w-fit w-[60%] lg:m-0 mx-auto mt-5 px-3 py-3 text-white font-semibold">
             <a href="#" target="_blank" class="text-xs">
               <button class="text-xs font-normal">INVEST WITH US</button>
             </a>
           </li>
         </ul>
       </nav>
+        <div class="lg:hidden block w-fit z-30" id="bars">      
+          <span class="w-[2rem] h-[0.15rem] bg-orange-900 lg:hidden block mt-2"></span>
+          <span class="w-[2rem] h-[0.15rem] bg-orange-900 lg:hidden block mt-2"></span>
+          <span class="w-[2rem] h-[0.15rem] bg-orange-900 lg:hidden block mt-2"></span>
+      </div>
     </header>
     <section id="contact_map">
       <iframe class="w-[100%] h-[25rem] fil" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d151986.11818132267!2d-2.388270080261063!3d53.472336445644075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a4d4c5226f5db%3A0xd9be143804fe6baa!2sManchester%2C%20UK!5e0!3m2!1sen!2sng!4v1720776328864!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

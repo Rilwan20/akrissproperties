@@ -15,9 +15,9 @@
   </head>
   <body>
 
-    <header class="flex justify-between py-8 px-[6%]">
+    <header class="flex justify-between py-8 px-[6%]" id="navLinks">
       <img src="" alt="Logo" />
-      <nav class="hidden lg:block">
+      <nav class="hidden lg:block" id="navs">
         <ul class="flex justify-between items-center gap-6">
           <li class="font-normal"><a href="index.html" class="text-xs">WHAT WE DO </a></li>
           <li class="font-normal">
@@ -30,19 +30,24 @@
               >MEET THE TEAM</a
             >
           </li>
-          <li class="bg-orange-600 px-8 py-3 text-white font-normal">
+          <li class="bg-orange-600 lg:px-8 lg:w-fit w-[60%] lg:m-0 mx-auto px-3 py-3 text-white font-normal">
             
             <a href="contact.html" class="text-xs" target="_blank"
               <button class="text-xs font-normal">CONTACT US</button>
             </a>
     
-          <li class="bg-orange-400 px-8 py-3 text-white font-semibold">
+          <li class="bg-orange-400 lg:px-8 lg:w-fit w-[60%] lg:m-0 mx-auto mt-5 px-3 py-3 text-white font-semibold">
             <a href="#" target="_blank" class="text-xs">
               <button class="text-xs font-normal">INVEST WITH US</button>
             </a>
           </li>
         </ul>
       </nav>
+        <div class="lg:hidden block w-fit z-30" id="bars">      
+          <span class="w-[2rem] h-[0.15rem] bg-orange-900 lg:hidden block mt-2"></span>
+          <span class="w-[2rem] h-[0.15rem] bg-orange-900 lg:hidden block mt-2"></span>
+          <span class="w-[2rem] h-[0.15rem] bg-orange-900 lg:hidden block mt-2"></span>
+      </div>
     </header>
     <section>
       <div class="relative bg-team-hero w-[100%] h-[8rem]  lg:h-[20rem] bg-cover">
