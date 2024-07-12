@@ -87,6 +87,13 @@ div {
   line-height: 3rem;
   color: white;
 }
+.section {
+  transition: transform 1s, opacity 1s;
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
 
 @media only screen and (min-width: 1440px) {
   .layout_1 {
