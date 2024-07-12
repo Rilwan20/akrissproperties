@@ -14,6 +14,7 @@ module.exports = {
       appearance: ['responsive', 'hover', 'focus'],
       backgroundImage: {
         'team-hero': "url('/img/team_hero.jpg')",
+        'home-hero': "url('/img/img_3.jpg')",
       },
     },
     screens: {
@@ -23,6 +24,7 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
       dark: '#222',
+      layout: '#111418;',
       gradient: '#22222200',
       gray: '#fafafa',
       white: '#ffffff',
