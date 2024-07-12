@@ -7,10 +7,14 @@ module.exports = {
     './index.html',
     './contact.html',
     './investment.html',
+    './team.html',
   ],
   theme: {
     extend: {
       appearance: ['responsive', 'hover', 'focus'],
+      backgroundImage: {
+        'team-hero': "url('/img/team_hero.jpg')",
+      },
     },
     screens: {
       lg: '1080px',
@@ -18,6 +22,8 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
+      dark: '#222',
+      gradient: '#22222200',
       gray: '#fafafa',
       white: '#ffffff',
       orange: {
