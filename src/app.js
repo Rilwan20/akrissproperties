@@ -84,3 +84,26 @@ document.querySelector('.nav__links').addEventListener('click', function (e) {
     window.location.href = `${select}`;
   }
 });
+
+// Sticky Nav
+
+const NavContainer = document.querySelector('#navLinks');
+
+const header = document.querySelector('.header');
+const navHeight = NavContainer.getBoundingClientRect().height;
+
+const stickyNav = function (entries) {
+  const [entry] = entries;
+  // console.log(entry);
+
+  if (!entry.isIntersecting) NavContainer.classList.add('sticky');
+  else NavContainer.classList.remove('sticky');
+};
+
+const headerObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${navHeight}px`,
+});
+
+headerObserver.observe(header);
