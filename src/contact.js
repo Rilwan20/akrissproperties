@@ -2,13 +2,28 @@ const NavBar = document.querySelector('#bars');
 
 const Navs = document.querySelector('#navs');
 
+const NavLinks = document.querySelector('.nav__links');
+
 const LoadEvenListerners = () => {
   NavBar.addEventListener('click', toogleNavs);
+  NavLinks.addEventListener('click', closeNavs);
 };
 
 const toogleNavs = () => {
   Navs.classList.toggle('show');
   NavBar.classList.toggle('active');
+};
+
+const closeNavs = e => {
+  const selectedLink = e.target.closest('li');
+
+  if (!selectedLink) return;
+
+  if (selectedLink) {
+    Navs.classList.remove('show');
+    NavBar.classList.remove('active');
+    return;
+  }
 };
 
 LoadEvenListerners();

@@ -13,7 +13,7 @@ module.exports = {
     extend: {
       appearance: ['responsive', 'hover', 'focus'],
       backgroundImage: {
-        'team-hero': "url('/img/team_hero_2.jpg')",
+        'team-hero': "url('/img/team_new_hero.jpg')",
         'home-hero': "url('/img/img_3.jpg')",
       },
     },
