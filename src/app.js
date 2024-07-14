@@ -5,24 +5,55 @@ const howItWorksContainer = document.querySelector('.how_it_work_container');
 const openWork = e => {
   const selectedWorkParent = e.target.closest('.how_it_work');
 
+  // console.log(selectedWorkParent);
   if (!selectedWorkParent) return;
   const all = howItWork;
+  // console.log(all);
+  // console.log(selectedWorkParent.dataset.show);
 
-  all.forEach(each => {
+  all.forEach((each, i) => {
     if (
       each.classList.contains('open') ||
       each.closest(`.how_it_work`).classList.remove('open')
     ) {
       each.classList.remove('open');
       each.closest(`.how_it_work`).classList.remove('color');
-    } else {
+    }
+
+    if (
+      !each.classList.contains('open') ||
+      !each.closest(`.how_it_work`).classList.remove('open')
+    ) {
       document
         .querySelector(`.a_${selectedWorkParent.dataset.show}`)
         .classList.add('open');
+
       document
         .querySelector(`.work_${selectedWorkParent.dataset.show}`)
         .classList.add('color');
+      document.querySelector(`.a_${selectedWorkParent.dataset.show}`);
     }
+
+    // else {
+    //   each.classList.remove('open');
+    //   each.closest(`.how_it_work`).classList.remove('color');
+    // }
+
+    // if (selectedWorkParent.dataset.show === i + 1) {
+    //   console.log(each);
+    // }
+
+    // if (selectedWorkParent.dataset.show === i + 1) {
+    //   each.classList.remove('open');
+    //   each.closest(`.how_it_work`).classList.remove('color');
+    // }
+    // if (
+    //   each.classList.contains('open') ||
+    //   each.closest(`.how_it_work`).classList.remove('open')
+    // ) {
+    //   each.classList.remove('open');
+    //   each.closest(`.how_it_work`).classList.remove('color');
+    // }
   });
 };
 
