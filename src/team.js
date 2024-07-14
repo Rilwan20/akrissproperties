@@ -73,5 +73,9 @@ document.querySelector('.nav__links').addEventListener('click', function (e) {
   if (e.target.classList.contains('nav__link')) {
     const id = e.target.getAttribute('href');
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+  } else {
+    const select = e.target.closest('.text-xs').getAttribute('href');
+
+    window.location.href = `${select}`;
   }
 });
