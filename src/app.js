@@ -33,27 +33,6 @@ const openWork = e => {
         .classList.add('color');
       document.querySelector(`.a_${selectedWorkParent.dataset.show}`);
     }
-
-    // else {
-    //   each.classList.remove('open');
-    //   each.closest(`.how_it_work`).classList.remove('color');
-    // }
-
-    // if (selectedWorkParent.dataset.show === i + 1) {
-    //   console.log(each);
-    // }
-
-    // if (selectedWorkParent.dataset.show === i + 1) {
-    //   each.classList.remove('open');
-    //   each.closest(`.how_it_work`).classList.remove('color');
-    // }
-    // if (
-    //   each.classList.contains('open') ||
-    //   each.closest(`.how_it_work`).classList.remove('open')
-    // ) {
-    //   each.classList.remove('open');
-    //   each.closest(`.how_it_work`).classList.remove('color');
-    // }
   });
 };
 
@@ -138,9 +117,11 @@ const NavContainer = document.querySelector('#navLinks');
 const header = document.querySelector('.header');
 const navHeight = NavContainer.getBoundingClientRect().height;
 
+console.log(navHeight);
+
 const stickyNav = function (entries) {
   const [entry] = entries;
-  // console.log(entry);
+  console.log(entry);
 
   if (!entry.isIntersecting) NavContainer.classList.add('sticky');
   else NavContainer.classList.remove('sticky');
@@ -149,6 +130,7 @@ const stickyNav = function (entries) {
 const headerObserver = new IntersectionObserver(stickyNav, {
   root: null,
   threshold: 0,
+
   rootMargin: `-${navHeight}px`,
 });
 
