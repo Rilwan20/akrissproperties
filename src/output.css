@@ -739,6 +739,10 @@ video {
   height: 100%;
 }
 
+.h-\[5rem\] {
+  height: 5rem;
+}
+
 .min-h-\[107px\] {
   min-height: 107px;
 }
@@ -1394,9 +1398,9 @@ div {
 }
 
 .header {
-  position: fixed;
+  position: sticky;
   width: 100%;
-  height: 8rem;
+  height: 5rem;
   top: 0;
   left: 0;
   background: rgba(255, 255, 255, 0.95);
@@ -1588,6 +1592,10 @@ div {
   .lg\:h-fit {
     height: -moz-fit-content;
     height: fit-content;
+  }
+
+  .lg\:h-\[8rem\] {
+    height: 8rem;
   }
 
   .lg\:w-\[100\%\] {
