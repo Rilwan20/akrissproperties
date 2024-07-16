@@ -1569,6 +1569,10 @@ div {
     margin-top: 7rem;
   }
 
+  .lg\:mt-\[8rem\] {
+    margin-top: 8rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1589,6 +1593,10 @@ div {
     height: 20rem;
   }
 
+  .lg\:h-\[6rem\] {
+    height: 6rem;
+  }
+
   .lg\:h-\[7rem\] {
     height: 7rem;
   }
@@ -1600,10 +1608,6 @@ div {
   .lg\:h-fit {
     height: -moz-fit-content;
     height: fit-content;
-  }
-
-  .lg\:h-\[6rem\] {
-    height: 6rem;
   }
 
   .lg\:w-\[100\%\] {
