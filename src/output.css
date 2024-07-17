@@ -1270,6 +1270,10 @@ video {
   font-size: 3.5rem;
 }
 
+.text-\[2rem\] {
+  font-size: 2rem;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -1878,6 +1882,10 @@ body {
 
   .lg\:text-\[1\.1rem\] {
     font-size: 1.1rem;
+  }
+
+  .lg\:text-\[3\.5rem\] {
+    font-size: 3.5rem;
   }
 
   .lg\:leading-10 {
