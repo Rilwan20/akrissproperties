@@ -1,24 +1,21 @@
 const howItWork = document.querySelectorAll('.a');
 const howItWorksContainer = document.querySelector('.how_it_work_container');
+const howItWorks = document.querySelectorAll('.how_it_work');
 
 // How it works functionality
 const openWork = e => {
   const selectedWorkParent = e.target.closest('.how_it_work');
 
-  // console.log(selectedWorkParent);
   if (!selectedWorkParent) return;
   const all = howItWork;
-  // console.log(all);
-  // console.log(selectedWorkParent.dataset.show);
 
   all.forEach((each, i) => {
-    if (
-      each.classList.contains('open') ||
-      each.closest(`.how_it_work`).classList.remove('open')
-    ) {
+    const init = () => {
       each.classList.remove('open');
       each.closest(`.how_it_work`).classList.remove('color');
-    }
+    };
+
+    init();
 
     if (
       !each.classList.contains('open') ||
@@ -35,6 +32,19 @@ const openWork = e => {
     }
   });
 };
+
+// const toggleWork = e => {
+//   console.log(e.target);
+//   if (
+//     e.target.classList.contains('color') ||
+//     e.target.classList.contains('open')
+//   ) {
+//     e.target.classList.remove('color');
+//   }
+
+//   return;
+
+// };
 
 howItWorksContainer.addEventListener('click', openWork);
 
@@ -119,7 +129,6 @@ const navHeight = NavContainer.getBoundingClientRect().height;
 
 const stickyNav = function (entries) {
   const [entry] = entries;
-  console.log(entry);
 
   if (!entry.isIntersecting) {
     NavContainer.classList.add('sticky');

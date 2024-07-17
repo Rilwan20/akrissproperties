@@ -665,10 +665,6 @@ video {
   margin-top: 2rem;
 }
 
-.mt-\[-2rem\] {
-  margin-top: -2rem;
-}
-
 .mt-\[16rem\] {
   margin-top: 16rem;
 }
@@ -687,10 +683,6 @@ video {
 
 .mt-\[5rem\] {
   margin-top: 5rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
 }
 
 .block {
@@ -814,10 +806,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[46\%\] {
-  width: 46%;
 }
 
 .grow {
@@ -1096,6 +1084,11 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -1109,11 +1102,6 @@ video {
 .py-\[3rem\] {
   padding-top: 3rem;
   padding-bottom: 3rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .pb-10 {
@@ -1208,6 +1196,10 @@ video {
   text-align: start;
 }
 
+.text-\[1\.5rem\] {
+  font-size: 1.5rem;
+}
+
 .text-\[13px\] {
   font-size: 13px;
 }
@@ -1232,6 +1224,10 @@ video {
   font-size: 28px;
 }
 
+.text-\[2rem\] {
+  font-size: 2rem;
+}
+
 .text-\[35px\] {
   font-size: 35px;
 }
@@ -1252,26 +1248,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[1rem\] {
-  font-size: 1rem;
-}
-
-.text-\[1\.5rem\] {
-  font-size: 1.5rem;
-}
-
-.text-\[3rem\] {
-  font-size: 3rem;
-}
-
-.text-\[3\.5rem\] {
-  font-size: 3.5rem;
-}
-
-.text-\[2rem\] {
-  font-size: 2rem;
 }
 
 .font-medium {
@@ -1337,12 +1313,26 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-orange-400 {
+  --tw-text-opacity: 1;
+  color: rgb(251 146 60 / var(--tw-text-opacity));
+}
+
+.text-orange-300 {
+  --tw-text-opacity: 1;
+  color: rgb(253 186 116 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
 
 .opacity-\[0\.5\] {
   opacity: 0.5;
+}
+
+.opacity-\[0\.7\] {
+  opacity: 0.7;
 }
 
 .shadow-sm {
@@ -1593,14 +1583,6 @@ body {
     margin-top: 3.5rem;
   }
 
-  .lg\:mt-\[7rem\] {
-    margin-top: 7rem;
-  }
-
-  .lg\:mt-\[8rem\] {
-    margin-top: 8rem;
-  }
-
   .lg\:block {
     display: block;
   }
@@ -1611,10 +1593,6 @@ body {
 
   .lg\:hidden {
     display: none;
-  }
-
-  .lg\:h-\[12\.5rem\] {
-    height: 12.5rem;
   }
 
   .lg\:h-\[20rem\] {
@@ -1646,16 +1624,16 @@ body {
     width: 20%;
   }
 
+  .lg\:w-\[22\%\] {
+    width: 22%;
+  }
+
   .lg\:w-\[24\%\] {
     width: 24%;
   }
 
   .lg\:w-\[30\%\] {
     width: 30%;
-  }
-
-  .lg\:w-\[37\%\] {
-    width: 37%;
   }
 
   .lg\:w-\[38\%\] {
@@ -1695,10 +1673,6 @@ body {
     width: fit-content;
   }
 
-  .lg\:w-\[22\%\] {
-    width: 22%;
-  }
-
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -1713,10 +1687,6 @@ body {
 
   .lg\:gap-3 {
     gap: 0.75rem;
-  }
-
-  .lg\:gap-\[10rem\] {
-    gap: 10rem;
   }
 
   .lg\:px-0 {
@@ -1792,8 +1762,8 @@ body {
     padding-bottom: 15px;
   }
 
-  .lg\:pb-\[8rem\] {
-    padding-bottom: 8rem;
+  .lg\:pb-\[3rem\] {
+    padding-bottom: 3rem;
   }
 
   .lg\:pl-0 {
@@ -1808,10 +1778,6 @@ body {
     padding-top: 2.25rem;
   }
 
-  .lg\:pt-\[1\.5rem\] {
-    padding-top: 1.5rem;
-  }
-
   .lg\:pt-\[10rem\] {
     padding-top: 10rem;
   }
@@ -1822,10 +1788,6 @@ body {
 
   .lg\:pt-\[3rem\] {
     padding-top: 3rem;
-  }
-
-  .lg\:pb-\[3rem\] {
-    padding-bottom: 3rem;
   }
 
   .lg\:text-center {
@@ -1840,12 +1802,20 @@ body {
     font-size: 0px;
   }
 
-  .lg\:text-\[1rem\] {
-    font-size: 1rem;
+  .lg\:text-\[1\.2rem\] {
+    font-size: 1.2rem;
   }
 
   .lg\:text-\[23px\] {
     font-size: 23px;
+  }
+
+  .lg\:text-\[2rem\] {
+    font-size: 2rem;
+  }
+
+  .lg\:text-\[3\.5rem\] {
+    font-size: 3.5rem;
   }
 
   .lg\:text-\[30px\] {
@@ -1854,38 +1824,6 @@ body {
 
   .lg\:text-\[50px\] {
     font-size: 50px;
-  }
-
-  .lg\:text-\[10rem\] {
-    font-size: 10rem;
-  }
-
-  .lg\:text-\[2\.5rem\] {
-    font-size: 2.5rem;
-  }
-
-  .lg\:text-\[2rem\] {
-    font-size: 2rem;
-  }
-
-  .lg\:text-\[1\.5rem\] {
-    font-size: 1.5rem;
-  }
-
-  .lg\:text-\[1\.3rem\] {
-    font-size: 1.3rem;
-  }
-
-  .lg\:text-\[1\.2rem\] {
-    font-size: 1.2rem;
-  }
-
-  .lg\:text-\[1\.1rem\] {
-    font-size: 1.1rem;
-  }
-
-  .lg\:text-\[3\.5rem\] {
-    font-size: 3.5rem;
   }
 
   .lg\:leading-10 {
