@@ -74,7 +74,7 @@ document.querySelector('.nav__links').addEventListener('click', function (e) {
     const id = e.target.getAttribute('href');
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
   } else {
-    const select = e.target.closest('.text-xs').getAttribute('href');
+    const select = e.target.closest('.text-sm').getAttribute('href');
 
     window.location.href = `${select}`;
   }
